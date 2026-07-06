@@ -138,7 +138,7 @@ A escolha do modelo final foi baseada principalmente no **ROC-AUC**, por ser uma
 
 
 ```
-gráficos/Matriz de Confusão.png
+![Comparação dos Modelos](gráficos/Modelo AUC.png)
 ```
 
 ---
