@@ -136,7 +136,6 @@ A escolha do modelo final foi baseada principalmente no **ROC-AUC**, por ser uma
 
 ## Comparação dos Modelos (AUC)
 
-📷 **Inserir imagem aqui**
 
 ```
 /images/comparacao_auc.png
