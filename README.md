@@ -135,7 +135,7 @@ A escolha do modelo final foi baseada principalmente no **ROC-AUC**, por ser uma
 # 📊 Visualizações
 
 ## Comparação dos Modelos (AUC)
-https://github.com/eliasramineli-sys/Previsao-de-Vitoria-em-Partidas-Ranqueadas-de-League-of-Legends/tree/87bfa513aa89ac2b04c13e0dc5e5002db801a524/gr%C3%A1ficos
+gráficos/Modelo AUC.png
 
 ## Curva ROC
 
