@@ -1,56 +1,262 @@
-# Previsão de Vitória em Partidas Ranqueadas de League of Legends
+# 🎮 Previsão de Vitória em Partidas Ranqueadas de League of Legends
 
-## Visão Geral
-
-Este projeto tem como objetivo prever se o **time azul vencerá uma partida ranqueada de League of Legends**, utilizando dados estatísticos dos primeiros minutos da partida.
-
-O projeto aplica um fluxo completo de Ciência de Dados, incluindo análise exploratória, engenharia de atributos, treinamento de modelos, ajuste de hiperparâmetros, avaliação de desempenho e interpretação dos resultados para stakeholders.
-
----
-
-## Problema de Negócio
-
-Em partidas competitivas, pequenas vantagens nos primeiros minutos podem influenciar diretamente o resultado final.
-Este projeto busca responder:
-
-> É possível prever a vitória do time azul com base nas estatísticas iniciais da partida?
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellow)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange)
+![XGBoost](https://img.shields.io/badge/XGBoost-Boosting-green)
+![Status](https://img.shields.io/badge/Status-Concluído-success)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 ---
 
-## Tecnologias Utilizadas
+# 📌 Sobre o Projeto
+
+Este projeto utiliza técnicas de **Ciência de Dados** e **Machine Learning** para prever se o **time azul vencerá uma partida ranqueada de League of Legends**, utilizando estatísticas coletadas nos primeiros minutos da partida.
+
+O objetivo é desenvolver um modelo capaz de identificar padrões que influenciam o resultado da partida antes do seu término, auxiliando na tomada de decisões e demonstrando a aplicação prática de algoritmos de classificação.
+
+---
+
+# 🎯 Objetivos
+
+* Analisar estatísticas das partidas.
+* Identificar quais atributos possuem maior influência na vitória.
+* Comparar diversos algoritmos de classificação.
+* Escolher o melhor modelo utilizando métricas robustas.
+* Comunicar os resultados por meio de visualizações claras para stakeholders.
+
+---
+
+# 📂 Base de Dados
+
+A base contém informações de partidas ranqueadas de League of Legends.
+
+### Variável alvo
+
+```
+blueWins
+```
+
+* 1 → Time Azul venceu
+* 0 → Time Vermelho venceu
+
+### Exemplos de atributos
+
+* Ouro total
+* Experiência
+* Torres destruídas
+* Dragões
+* Arautos
+* Eliminações
+* Assistências
+* Diferenças entre os times (features `diff`)
+
+---
+
+# 🛠 Tecnologias Utilizadas
 
 * Python
 * Pandas
 * NumPy
 * Matplotlib
-* Scikit-learn
+* Scikit-Learn
 * XGBoost
-* Jupyter Notebook
-* Streamlit
-* Joblib
 
 ---
 
-## Estrutura do Projeto
+# 📊 Processo do Projeto
+
+## 1. Carregamento dos dados
+
+* Importação da base
+* Inspeção inicial
+* Tipos das variáveis
+* Valores ausentes
+
+---
+
+## 2. Análise Exploratória (EDA)
+
+Foi realizada uma análise completa para compreender o comportamento dos dados.
+
+Incluindo:
+
+* distribuição da variável alvo;
+* correlação entre variáveis;
+* estatísticas descritivas;
+* identificação de possíveis redundâncias.
+
+---
+
+## 3. Engenharia de Atributos
+
+Foram realizadas diversas melhorias na base:
+
+* remoção de variáveis redundantes;
+* criação das variáveis de diferença (`diff`);
+* tratamento de valores ausentes;
+* preparação dos dados para modelagem.
+
+---
+
+## 4. Modelos Testados
+
+Foram avaliados diversos algoritmos de classificação.
+
+* Regressão Logística
+* Naive Bayes
+* Árvore de Decisão
+* Random Forest
+* Gradient Boosting
+* XGBoost
+* Ensemble (Voting Classifier)
+
+Além disso foi realizado:
+
+* Validação Cruzada (Stratified K-Fold)
+* RandomizedSearchCV para otimização de hiperparâmetros
+
+---
+
+# 📈 Métricas Avaliadas
+
+Os modelos foram comparados utilizando:
+
+* Acurácia
+* Precisão
+* Recall
+* F1-Score
+* ROC-AUC
+
+A escolha do modelo final foi baseada principalmente no **ROC-AUC**, por ser uma métrica mais robusta para problemas de classificação.
+
+---
+
+# 📊 Visualizações
+
+## Comparação dos Modelos (AUC)
+
+📷 **Inserir imagem aqui**
+
+```
+/images/comparacao_auc.png
+```
+
+---
+
+## Curva ROC
+
+📷 **Inserir imagem aqui**
+
+```
+/images/curva_roc.png
+```
+
+---
+
+## Matriz de Confusão
+
+📷 **Inserir imagem aqui**
+
+```
+/images/matriz_confusao.png
+```
+
+---
+
+## Importância das Variáveis
+
+📷 **Inserir imagem aqui**
+
+```
+/images/importancia_variaveis.png
+```
+
+---
+
+## Heatmap de Correlação
+
+📷 **Inserir imagem aqui**
+
+```
+/images/heatmap.png
+```
+
+---
+
+## Distribuição da Variável Alvo
+
+📷 **Inserir imagem aqui**
+
+```
+/images/distribuicao_alvo.png
+```
+
+---
+
+# 📌 Principais Insights
+
+Após a análise foi possível observar que:
+
+* as diferenças entre ouro, experiência e objetivos possuem forte influência no resultado da partida;
+* estatísticas coletadas nos primeiros minutos já permitem prever o vencedor com boa precisão;
+* modelos baseados em árvores apresentaram excelente desempenho;
+* o ajuste de hiperparâmetros melhorou significativamente a capacidade preditiva do modelo.
+
+---
+
+# 🚀 Como Executar
+
+Clone o repositório
 
 ```bash
-projeto-lol/
+git clone https://github.com/seuusuario/nome-do-projeto.git
+```
+
+Entre na pasta
+
+```bash
+cd nome-do-projeto
+```
+
+Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+Execute o notebook
+
+```bash
+jupyter notebook
+```
+
+ou
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 📁 Estrutura do Projeto
+
+```
+📦 projeto-lol
+
+├── data/
+│   └── Base_M43_Pratique_LOL_RANKED_WIN.csv
 │
 ├── notebooks/
-│   └── Previsao_Vitoria_LOL.ipynb
+│   └── Previsão de Vitória em Partidas Ranqueadas de League of Legends.ipynb
 │
-├── imagens/
-│   ├── distribuicao_alvo.png
-│   ├── heatmap_correlacao.png
-│   ├── comparacao_modelos_auc.png
+├── images/
+│   ├── comparacao_auc.png
 │   ├── curva_roc.png
 │   ├── matriz_confusao.png
 │   ├── importancia_variaveis.png
-│   └── app_streamlit.gif
-│
-├── modelo/
-│   ├── modelo_lol_vitoria_blue.pkl
-│   └── colunas_modelo_lol.pkl
+│   ├── heatmap.png
+│   └── distribuicao_alvo.png
 │
 ├── app.py
 ├── requirements.txt
@@ -59,204 +265,24 @@ projeto-lol/
 
 ---
 
-## Etapas do Projeto
+# 💡 Possíveis Melhorias Futuras
 
-1. Carregamento da base de dados
-2. Análise exploratória dos dados
-3. Visualização da variável alvo
-4. Análise de correlação
-5. Engenharia de atributos
-6. Separação entre treino e teste
-7. Treinamento de múltiplos modelos
-8. Ajuste de hiperparâmetros
-9. Avaliação com AUC, F1-score, matriz de confusão e curva ROC
-10. Interpretação dos resultados para stakeholders
-11. Deploy simples com Streamlit
+* Deploy em Streamlit Cloud
+* API utilizando FastAPI
+* Monitoramento do modelo
+* Explicabilidade utilizando SHAP
+* Pipeline automatizado de Machine Learning
 
 ---
 
-## Visualizações do Projeto
+# 👨‍💻 Autor
 
-### Distribuição da Variável Alvo
+**Elias da Silva Santos Filho**
 
-![Distribuição da variável alvo](imagens/distribuicao_alvo.png)
-
-A variável alvo apresentou distribuição equilibrada entre vitórias e derrotas, o que contribui para um treinamento mais justo dos modelos.
+Projeto desenvolvido como prática de Ciência de Dados e Machine Learning, aplicando técnicas de análise exploratória, engenharia de atributos, validação cruzada, otimização de hiperparâmetros e avaliação de modelos de classificação.
 
 ---
 
-### Heatmap de Correlação
+# ⭐ Se este projeto foi útil
 
-![Heatmap de correlação](imagens/heatmap_correlacao.png)
-
-O heatmap ajuda a identificar quais variáveis possuem maior relação com a vitória do time azul.
-
----
-
-### Comparação dos Modelos por AUC
-
-![Comparação dos modelos AUC](imagens/comparacao_modelos_auc.png)
-
-A métrica AUC foi usada para comparar a capacidade dos modelos em diferenciar vitórias e derrotas.
-
----
-
-### Curva ROC
-
-![Curva ROC](imagens/curva_roc.png)
-
-A Curva ROC mostra que o modelo final possui boa capacidade de classificação.
-
----
-
-### Matriz de Confusão
-
-![Matriz de confusão](imagens/matriz_confusao.png)
-
-A matriz de confusão apresenta os acertos e erros do modelo, facilitando a interpretação do desempenho.
-
----
-
-### Importância das Variáveis
-
-![Importância das variáveis](imagens/importancia_variaveis.png)
-
-As variáveis mais importantes indicam quais fatores mais influenciaram as previsões do modelo.
-
----
-
-## Demonstração do Aplicativo
-
-![Demonstração do app](imagens/app_streamlit.gif)
-
-O aplicativo em Streamlit permite carregar dados e visualizar a probabilidade de vitória do time azul.
-
----
-
-## Modelos Testados
-
-* Regressão Logística
-* Naive Bayes
-* Árvore de Decisão
-* Random Forest
-* Gradient Boosting
-* XGBoost
-* Voting Classifier
-
----
-
-## Métricas de Avaliação
-
-As principais métricas utilizadas foram:
-
-* Acurácia
-* Precisão
-* Recall
-* F1-score
-* AUC
-* Log Loss
-* Matriz de Confusão
-* Curva ROC
-
----
-
-## Resultado Final
-
-O modelo final apresentou bom desempenho, com AUC aproximada de **0,81**, demonstrando boa capacidade de diferenciar partidas vencidas e perdidas pelo time azul.
-
-Os principais fatores associados à vitória foram:
-
-* vantagem de ouro;
-* controle de objetivos;
-* vantagem de experiência;
-* diferença de desempenho entre os times.
-
----
-
-## Como Executar o Projeto
-
-### 1. Clone o repositório
-
-```bash
-git clone https://github.com/seu-usuario/projeto-lol.git
-cd projeto-lol
-```
-
-### 2. Crie um ambiente virtual
-
-```bash
-python -m venv venv
-```
-
-### 3. Ative o ambiente virtual
-
-No Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-No Linux/Mac:
-
-```bash
-source venv/bin/activate
-```
-
-### 4. Instale as dependências
-
-```bash
-pip install -r requirements.txt
-```
-
-### 5. Execute o notebook
-
-```bash
-jupyter notebook
-```
-
-### 6. Execute o aplicativo Streamlit
-
-```bash
-streamlit run app.py
-```
-
----
-
-## Arquivo requirements.txt
-
-```txt
-pandas
-numpy
-matplotlib
-scikit-learn
-xgboost
-streamlit
-joblib
-jupyter
-```
-
----
-
-## Conclusão
-
-O projeto demonstrou que é possível prever a vitória do time azul em partidas ranqueadas de League of Legends utilizando técnicas de Machine Learning.
-
-Além da boa performance preditiva, o projeto também apresenta interpretações voltadas para stakeholders, tornando os resultados mais compreensíveis e úteis para tomada de decisão.
-
----
-
-## Próximos Passos
-
-* Implementar explicabilidade com SHAP ou LIME
-* Melhorar o deploy com interface mais completa
-* Testar LightGBM e CatBoost
-* Criar pipeline completo de Machine Learning
-* Publicar o app no Streamlit Cloud
-
----
-
-## Autor
-
-Desenvolvido por **Elias da Silva Santos Filho**
-
-Projeto criado para fins acadêmicos e composição de portfólio profissional em Ciência de Dados.
+Deixe uma ⭐ no repositório para apoiar o desenvolvimento de novos projetos.
