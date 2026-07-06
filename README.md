@@ -135,18 +135,22 @@ A escolha do modelo final foi baseada principalmente no **ROC-AUC**, por ser uma
 # 📊 Visualizações
 
 ## Comparação dos Modelos (AUC)
-
+![Comparação dos Modelos](images/Modelo_AUC.png)
 
 ## Curva ROC
-![ROC](images/ROC.png)
+![Curva ROC](images/ROC.png)
 
 ## Matriz de Confusão
+![Matriz de Confusão](images/Matriz_Confusão.png)
 
 ## Importância das Variáveis
+![Importância das Variáveis](images/Top10.png)
 
 ## Heatmap de Correlação
+![Heatmap de Correlação](images/heatmap.png)
 
 ## Distribuição da Variável Alvo
+![Distribuição da Variável Alvo](images/distribuição_variavel.png)
 
 # 📌 Principais Insights
 
