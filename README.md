@@ -136,10 +136,10 @@ A escolha do modelo final foi baseada principalmente no **ROC-AUC**, por ser uma
 
 ## Comparação dos Modelos (AUC)
 
-![Comparação dos Modelos](images/auc.png)
+
 
 ## Curva ROC
-
+![Curva ROC](images/roc.png)
 ## Matriz de Confusão
 
 ## Importância das Variáveis
