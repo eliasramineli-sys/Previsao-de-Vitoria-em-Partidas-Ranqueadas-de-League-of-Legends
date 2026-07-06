@@ -138,7 +138,7 @@ A escolha do modelo final foi baseada principalmente no **ROC-AUC**, por ser uma
 
 
 ## Curva ROC
-![Curva ROC](images/ROC.png)
+![ROC](images/ROC.png)
 
 ## Matriz de Confusão
 
