@@ -136,62 +136,15 @@ A escolha do modelo final foi baseada principalmente no **ROC-AUC**, por ser uma
 
 ## Comparação dos Modelos (AUC)
 
-
-```
-![Comparação dos Modelos](gráficos/Modelo AUC.png)
-```
-
----
-
 ## Curva ROC
-
-📷 **Inserir imagem aqui**
-
-```
-/images/curva_roc.png
-```
-
----
 
 ## Matriz de Confusão
 
-📷 **Inserir imagem aqui**
-
-```
-/images/matriz_confusao.png
-```
-
----
-
 ## Importância das Variáveis
-
-📷 **Inserir imagem aqui**
-
-```
-/images/importancia_variaveis.png
-```
-
----
 
 ## Heatmap de Correlação
 
-📷 **Inserir imagem aqui**
-
-```
-/images/heatmap.png
-```
-
----
-
 ## Distribuição da Variável Alvo
-
-📷 **Inserir imagem aqui**
-
-```
-/images/distribuicao_alvo.png
-```
-
----
 
 # 📌 Principais Insights
 
@@ -230,13 +183,6 @@ Execute o notebook
 jupyter notebook
 ```
 
-ou
-
-```bash
-streamlit run app.py
-```
-
----
 
 # 📁 Estrutura do Projeto
 
@@ -244,7 +190,7 @@ streamlit run app.py
 📦 projeto-lol
 
 ├── data/
-│   └── Base_M43_Pratique_LOL_RANKED_WIN.csv
+│   └── base de dados.csv
 │
 ├── notebooks/
 │   └── Previsão de Vitória em Partidas Ranqueadas de League of Legends.ipynb
@@ -261,22 +207,9 @@ streamlit run app.py
 ├── requirements.txt
 └── README.md
 ```
-
----
-
-# 💡 Possíveis Melhorias Futuras
-
-* Deploy em Streamlit Cloud
-* API utilizando FastAPI
-* Monitoramento do modelo
-* Explicabilidade utilizando SHAP
-* Pipeline automatizado de Machine Learning
-
----
-
 # 👨‍💻 Autor
 
-**Elias da Silva Santos Filho**
+**Elias Ramineli**
 
 Projeto desenvolvido como prática de Ciência de Dados e Machine Learning, aplicando técnicas de análise exploratória, engenharia de atributos, validação cruzada, otimização de hiperparâmetros e avaliação de modelos de classificação.
 
