@@ -135,7 +135,8 @@ A escolha do modelo final foi baseada principalmente no **ROC-AUC**, por ser uma
 # 📊 Visualizações
 
 ## Comparação dos Modelos (AUC)
-![Comparação dos Modelos](gráficos/Modelo AUC.png)
+
+![Comparação dos Modelos](images/auc.png)
 
 ## Curva ROC
 
