@@ -3,10 +3,10 @@
 📌 Sobre o Projeto
 Este projeto aplica técnicas de Ciência de Dados e Machine Learning para prever se o time azul vencerá uma partida ranqueada de League of Legends.
 O trabalho foi desenvolvido seguindo um fluxo completo de um projeto de Data Science, desde a exploração dos dados até a comparação de modelos e otimização de desempenho.
-________________________________________
+
 🎯 Objetivo
 Construir um modelo de classificação capaz de prever o resultado de uma partida utilizando apenas informações estatísticas da fase inicial do jogo.
-________________________________________
+
 📂 Base de Dados
 A base contém estatísticas das partidas ranqueadas, incluindo informações dos dois times, como:
 •	Ouro obtido
@@ -23,14 +23,14 @@ A variável alvo do projeto é:
 blueWins
 •	1 → Vitória do Time Azul
 •	0 → Vitória do Time Vermelho
-________________________________________
+
 🔍 Etapas do Projeto
 1. Entendimento dos Dados
 •	Análise das variáveis
 •	Estatísticas descritivas
 •	Identificação de valores ausentes
 •	Compreensão da variável alvo
-________________________________________
+
 2. Análise Exploratória (EDA)
 Foram desenvolvidas diversas visualizações para compreender melhor os dados.
 Entre elas:
@@ -40,15 +40,15 @@ Entre elas:
 •	Heatmap de correlação
 •	Comparação entre variáveis
 •	Análise estatística das principais métricas
-________________________________________
-3. Engenharia de Atributos
+
+4. Engenharia de Atributos
 Nesta etapa foram realizadas melhorias importantes na base de dados:
 •	Remoção da coluna gameId
 •	Tratamento de valores ausentes
 •	Redução de redundâncias
 •	Criação de variáveis de diferença (diff) entre os dois times
 Essas transformações permitiram representar melhor o equilíbrio entre as equipes e melhorar a capacidade preditiva dos modelos.
-________________________________________
+
 4. Modelagem
 Foram comparados diferentes algoritmos de classificação:
 •	Regressão Logística
@@ -56,7 +56,7 @@ Foram comparados diferentes algoritmos de classificação:
 •	Random Forest
 •	Gradient Boosting
 Após a comparação inicial, foi realizado ajuste de hiperparâmetros utilizando RandomizedSearchCV para otimizar o modelo de melhor desempenho.
-________________________________________
+
 5. Avaliação dos Modelos
 Os modelos foram avaliados utilizando métricas amplamente empregadas em projetos profissionais:
 •	Acurácia
@@ -68,7 +68,7 @@ Os modelos foram avaliados utilizando métricas amplamente empregadas em projeto
 •	Matriz de Confusão
 •	Validação Cruzada (Cross Validation)
 A escolha do modelo final priorizou a métrica ROC-AUC, por representar melhor a capacidade do modelo em distinguir partidas vencedoras e perdedoras.
-________________________________________
+
 📊 Principais Visualizações
 O projeto inclui gráficos para apoiar toda a análise:
 •	Distribuição da variável alvo
