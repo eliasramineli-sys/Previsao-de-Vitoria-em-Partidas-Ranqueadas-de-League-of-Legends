@@ -79,7 +79,7 @@ O projeto inclui gráficos para apoiar toda a análise:
 •	Curva ROC
 •	Matriz de Confusão
 •	Importância das variáveis
-________________________________________
+
 🛠 Tecnologias Utilizadas
 •	Python
 •	Pandas
@@ -89,11 +89,11 @@ ________________________________________
 •	Gradient Boosting
 •	Random Forest
 •	RandomizedSearchCV
-________________________________________
+
 📈 Resultados
 Após comparar diferentes algoritmos e realizar o ajuste de hiperparâmetros, foi selecionado o modelo com melhor capacidade de generalização.
 A validação em dados nunca vistos demonstrou que o modelo consegue realizar previsões consistentes, apresentando excelente equilíbrio entre precisão, recall e capacidade de discriminação das classes.
-________________________________________
+
 💡 Principais Aprendizados
 Durante o desenvolvimento deste projeto foi possível aplicar diversas etapas fundamentais da Ciência de Dados:
 •	Exploração e interpretação de dados;
@@ -103,9 +103,9 @@ Durante o desenvolvimento deste projeto foi possível aplicar diversas etapas fu
 •	Ajuste de hiperparâmetros;
 •	Validação estatística;
 •	Interpretação dos resultados.
-________________________________________
+
 👨‍💻 Autor
 Elias da Silva Santos Filho
 Projeto desenvolvido como prática de Ciência de Dados, aplicando técnicas de Machine Learning supervisionado para classificação e previsão de resultados em partidas de League of Legends.
-________________________________________
+
 ⭐ Se este projeto foi útil para você, deixe uma estrela no repositório!
