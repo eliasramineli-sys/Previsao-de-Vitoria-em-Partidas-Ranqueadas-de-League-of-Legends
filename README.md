@@ -1,4 +1,5 @@
-🎮 Previsão de Vitória em Partidas Ranqueadas de League of Legends
+# 🎮 Previsão de Vitória em Partidas Ranqueadas de League of Legends
+
 📌 Sobre o Projeto
 Este projeto aplica técnicas de Ciência de Dados e Machine Learning para prever se o time azul vencerá uma partida ranqueada de League of Legends.
 O trabalho foi desenvolvido seguindo um fluxo completo de um projeto de Data Science, desde a exploração dos dados até a comparação de modelos e otimização de desempenho.
