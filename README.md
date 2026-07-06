@@ -161,35 +161,6 @@ Após a análise foi possível observar que:
 * modelos baseados em árvores apresentaram excelente desempenho;
 * o ajuste de hiperparâmetros melhorou significativamente a capacidade preditiva do modelo.
 
----
-
-# 🚀 Como Executar
-
-Clone o repositório
-
-```bash
-git clone https://github.com/seuusuario/nome-do-projeto.git
-```
-
-Entre na pasta
-
-```bash
-cd nome-do-projeto
-```
-
-Instale as dependências
-
-```bash
-pip install -r requirements.txt
-```
-
-Execute o notebook
-
-```bash
-jupyter notebook
-```
-
-
 # 📁 Estrutura do Projeto
 
 ```
